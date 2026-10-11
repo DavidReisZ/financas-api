@@ -24,6 +24,19 @@ public class Carteira {
             }
             return saldo;
         }
+
+        public double calcularDespesasDoMes(int mes){
+            double total = 0;
+
+            for(Transacao transacao : transacoes){
+
+                if (transacao.getTipo() == TipoTransacao.DESPESA && transacao.getData().getMonthValue() == mes){
+                    total = total + transacao.getValor();
+                }
+            }
+            return total;
+        }
+
     }
 
 

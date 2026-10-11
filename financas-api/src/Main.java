@@ -1,7 +1,6 @@
 
 import java.time.LocalDate;
 
-import java.util.ArrayList;
 
 public class Main {
      public static void main(String[] args) {
@@ -37,6 +36,8 @@ public class Main {
          carteira.adicionar(almoco);
          carteira.adicionar(onibus);
          System.out.println("saldo: " + carteira.calcularSaldo());
+
+         System.out.println("despesas do mes: "+ carteira.calcularDespesasDoMes(9));
 
     }
 

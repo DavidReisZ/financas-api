@@ -12,6 +12,7 @@
 - criei a classe Categoria e testei no Main
 - criei TipoTransacao (enum), Transacao e guardei várias transações numa ArrayList
 - guardei as transações numa ArrayList e calculei o saldo percorrendo ela com for e if
+- criei a classe Carteira para guardar a lista de transações e calcular o saldo, em vez de deixar tudo no Main. Assim cada classe tem uma responsabilidade só
 
 
 **Decisões:**
@@ -36,3 +37,4 @@
 - : o construtor entrega os valores iniciais na criação do objeto
 - uma classe pode ter outra como atributo, e ArrayList<Transacao> guarda objetos, não só números
 - o for-each percorre uma lista item por item, e a comparação do enum usa ==
+- um método que calcula não deve imprimir, ele devolve o valor; a lista ficou privada e só se mexe nela por métodos da classe
