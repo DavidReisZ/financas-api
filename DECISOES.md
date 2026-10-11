@@ -1,6 +1,6 @@
 # Diário de decisões
 
-## Etapa 1: Java puro no console (em andamento)
+## Etapa 1: Java puro no console (concuída)
 
 **Data:** 05/10/2026
 
@@ -13,6 +13,7 @@
 - criei TipoTransacao (enum), Transacao e guardei várias transações numa ArrayList
 - guardei as transações numa ArrayList e calculei o saldo percorrendo ela com for e if
 - criei a classe Carteira para guardar a lista de transações e calcular o saldo, em vez de deixar tudo no Main. Assim cada classe tem uma responsabilidade só
+- criei o cálculo das despesas de um mês, filtrando por tipo e por mês com &&
 
 
 **Decisões:**
@@ -38,3 +39,4 @@
 - uma classe pode ter outra como atributo, e ArrayList<Transacao> guarda objetos, não só números
 - o for-each percorre uma lista item por item, e a comparação do enum usa ==
 - um método que calcula não deve imprimir, ele devolve o valor; a lista ficou privada e só se mexe nela por métodos da classe
+- o gasto do mês não fica guardado, é calculado somando as transações, e o LocalDate tem métodos prontos como getMonthValue()
