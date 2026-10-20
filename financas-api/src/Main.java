@@ -1,4 +1,9 @@
 
+import com.davidreis.financas_api.Carteira;
+import com.davidreis.financas_api.Categoria;
+import com.davidreis.financas_api.TipoTransacao;
+import com.davidreis.financas_api.Transacao;
+
 import java.time.LocalDate;
 
 

@@ -1,5 +1,10 @@
+package com.davidreis.financas_api;
+
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 
+@Service
 public class Carteira {
 
     private ArrayList<Transacao> transacoes = new ArrayList<>();
@@ -9,6 +14,11 @@ public class Carteira {
 
 
         }
+    public ArrayList<Transacao> listar() {
+        return new ArrayList<>(transacoes);
+    }
+
+
         public double calcularSaldo(){
             double saldo = 0;
 

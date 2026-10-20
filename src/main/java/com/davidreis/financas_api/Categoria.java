@@ -1,3 +1,5 @@
+package com.davidreis.financas_api;
+
 public class Categoria {
      private String nome;
 
